@@ -22,6 +22,28 @@ neither                  →  CLEAR
 
 ---
 
+## Architecture
+
+```mermaid
+flowchart LR
+    V[Input video] --> F[OpenCV<br/>frame extraction]
+    V --> A[Librosa<br/>1-second audio chunks, 22,050 Hz]
+    F --> Y[YOLOv8n<br/>ambulance / fire truck / police car]
+    A --> M[40 MFCC features]
+    M --> N[ANN classifier<br/>Dense 256 → 128 → 2]
+    Y -->|v_detected| S{Sensor fusion}
+    N -->|a_detected| S
+    S --> O[Annotated video<br/>EMERGENCY / WARNING / CLEAR]
+```
+
+| Module | Model | Input | Output |
+|--------|-------|-------|--------|
+| Visual | YOLOv8n fine-tuned (50 epochs, 640×640) | Video frames | Bounding boxes → `v_detected` |
+| Audio | 3-layer Dense ANN (UrbanSound8K) | 40 MFCCs per second | Siren vs horn → `a_detected` |
+| Fusion | AND / OR rules | `v_detected`, `a_detected` | Status overlay on each frame |
+
+---
+
 ## Project files
 
 ```
