@@ -41,8 +41,8 @@ training/audio_model_training_and_fusion.py   audio ANN training + fusion demo (
 ## Run locally
 
 ```bash
-git clone https://github.com/WR-Shashank/emergency-vehicle-detection-by-shashank.git
-cd emergency-vehicle-detection-by-shashank
+git clone https://github.com/WR-Shashank/Emergency-vehicle-detection.git
+cd Emergency-vehicle-detection
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -50,7 +50,7 @@ streamlit run app.py
 ## Deploy (Streamlit Community Cloud)
 
 1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub
-2. **Create app** → repo `WR-Shashank/emergency-vehicle-detection-by-shashank`, branch `main`, file `app.py`
+2. **Create app** → repo `WR-Shashank/Emergency-vehicle-detection`, branch `main`, file `app.py`
 3. Set the app URL to `emergency-vehicle-detection-by-shashank` and pick Python 3.11 under *Advanced settings*
 4. Click **Deploy**
 
