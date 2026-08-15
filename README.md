@@ -3,7 +3,7 @@
 A minor project that detects emergency vehicles using both visual and audio signals at the same time. Instead of relying only on camera footage, it also listens for sirens and horns, then combines both to decide whether an emergency vehicle is actually present.
 
 **Made by:** Shashank
-**Live Demo:** [emergency-vehicle-detection-by-shashank.streamlit.app](https://emergency-vehicle-detection-by-shashank.streamlit.app)
+**Live Demo:** [emergency-vehicle-detection.streamlit.app](https://emergency-vehicle-detection.streamlit.app)
 
 ---
 
@@ -51,7 +51,7 @@ streamlit run app.py
 
 1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub
 2. **Create app** → repo `WR-Shashank/Emergency-vehicle-detection`, branch `main`, file `app.py`
-3. Set the app URL to `emergency-vehicle-detection-by-shashank` and pick Python 3.11 under *Advanced settings*
+3. Set the app URL to `emergency-vehicle-detection` and pick Python 3.11 under *Advanced settings*
 4. Click **Deploy**
 
 ## Retraining

@@ -576,9 +576,9 @@ with tab4:
     <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.25); 
          border-radius:12px; padding:0.9rem 1.4rem; margin-bottom:1.5rem;">
         🌐 <b>Live App:</b> 
-        <a href="https://emergency-vehicle-detection-by-shashank.streamlit.app" 
+        <a href="https://emergency-vehicle-detection.streamlit.app" 
            target="_blank" style="color:#60a5fa;">
-            emergency-vehicle-detection-by-shashank.streamlit.app
+            emergency-vehicle-detection.streamlit.app
         </a>
     </div>
     """, unsafe_allow_html=True)
